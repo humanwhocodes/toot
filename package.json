@@ -1,0 +1,64 @@
+{
+  "name": "@humanwhocodes/toot",
+  "version": "0.0.0",
+  "description": "CLI for posting to Mastodon",
+  "type": "module",
+  "bin": {
+    "toot": "dist/bin.js"
+  },
+  "files": [
+    "dist/bin.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/nzakas"
+  },
+  "scripts": {
+    "build": "rollup -c && tsc",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint *.js src/ tests/",
+    "lint:fix": "eslint --fix *.js src/ tests/",
+    "test": "c8 mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanwhocodes/toot.git"
+  },
+  "keywords": [
+    "mastodon",
+    "api",
+    "toot"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Nicholas C. Zaks",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "c8": "7.12.0",
+    "chai": "4.3.6",
+    "eslint": "8.21.0",
+    "lint-staged": "13.0.3",
+    "mocha": "9.2.2",
+    "nock": "^13.3.0",
+    "rollup": "2.77.2",
+    "typescript": "4.7.4",
+    "yorkie": "2.0.0"
+  },
+  "dependencies": {
+    "@humanwhocodes/env": "^2.2.2",
+    "dotenv": "^16.0.3"
+  }
+}
