@@ -1,6 +1,6 @@
 {
   "name": "@humanwhocodes/toot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "CLI for posting to Mastodon",
   "type": "module",
   "bin": {
