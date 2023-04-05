@@ -36,7 +36,7 @@ Then, you can run the CLI and pass a message on the command line using `npx`:
 $ npx @humanwhocodes/toot "Hello from the command line!"
 ```
 
-If successful, the CLI will output the response from Twitter.
+If successful, the CLI will output the response from Mastodon.
 
 ### Testing with dotenv
 
