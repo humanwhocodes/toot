@@ -1,10 +1,7 @@
-# Toot CLI
+# Toot CLI (Deprecated)
 
-by [Nicholas C. Zakas](https://humanwhocodes.com)
-
-![Node CI](https://github.com/humanwhocodes/toot/workflows/Node%20CI/badge.svg)
-
-If you find this useful, please consider supporting my work with a [donation](https://humanwhocodes.com/donate).
+> [!IMPORTANT]  
+> This package is deprecated. Use [`@humanwhocodes/crosspost`](https://npmjs.com/package/@humanwhocodes/crosspost) instead.
 
 ## Description
 
