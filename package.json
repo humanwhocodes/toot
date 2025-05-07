@@ -54,7 +54,7 @@
     "mocha": "9.2.2",
     "nock": "^13.3.0",
     "rollup": "2.77.2",
-    "typescript": "4.7.4",
+    "typescript": "4.9.5",
     "yorkie": "2.0.0"
   },
   "dependencies": {
